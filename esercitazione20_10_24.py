@@ -58,10 +58,25 @@ for x in range(np):
     if(To<stop):
         break
 
-"""
+
 import math
 star = int(input("numero di cui fare la radice: "))
 rad= math.trunc(star/2)
 for x in range(20):
     rad=(1/2)*(rad+(star/rad))
     print(rad)
+
+    """
+import math
+x=0.001
+it=0
+matit=0
+y=5
+max=-math.inf
+while (x*it)<y:
+    f=(x*it)*pow(math.e,(-1*(x*it)))
+    if(f>max):
+        max=f
+        matit=it
+    it=it+1
+print(f,"a x: ",matit/1000)
